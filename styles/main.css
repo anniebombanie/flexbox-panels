@@ -53,6 +53,7 @@ p.author {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 3%;
   }
 }
 
@@ -70,19 +71,19 @@ p.author {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc( 100vmax / 3);
   width: auto;
+  overflow: hidden;
   padding-top: 13%;
   padding-bottom: 12%;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .panel {
     height: 100%;
+    max-height: 100%;
+    width: auto;
+    padding: 13% 3%;
   }
 }
 
@@ -111,7 +112,7 @@ p.author {
 @media screen and (min-width: 768px) {
   .img-container {
     height: auto;
-    width: calc( 100% / 3);
+    width: calc( 100vmax / 3);
   }
 }
 
@@ -122,7 +123,7 @@ p.author {
 
 @media screen and (min-width: 768px) {
   .img-container img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
 }

@@ -44,6 +44,7 @@ p {
 
   @media screen and ( min-width:768px ) {
     flex-direction: row;
+    margin: 3%;
   }
 }
 
@@ -52,15 +53,17 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc( 100vmax / 3 );
   width: auto;
+  overflow: hidden;
   padding-top: 13%;
   padding-bottom: 12%;
-  overflow: hidden;
-  flex: 1;
+  width: 100%;
 
   @media screen and ( min-width:768px ) {
     height: 100%;
+    max-height: 100%;
+    width: auto;
+    padding: 13% 3%;
   }
 
   &:nth-child( 2 ) {
@@ -85,7 +88,7 @@ p {
 
   @media screen and ( min-width:768px ) {
     height: auto;
-    width: calc( 100% / 3 );
+    width: calc( 100vmax / 3 );
   }
 
   img {
@@ -93,8 +96,8 @@ p {
     height: 100%;
 
     @media screen and ( min-width:768px ) {
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
     }
   }
 }
