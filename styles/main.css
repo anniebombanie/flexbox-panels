@@ -65,9 +65,6 @@ p.author {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -76,14 +73,18 @@ p.author {
   padding-top: 13%;
   padding-bottom: 12%;
   width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media screen and (min-width: 768px) {
   .panel {
-    height: 100%;
-    max-height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: auto;
-    padding: 13% 3%;
+    padding: 10% 3%;
   }
 }
 
