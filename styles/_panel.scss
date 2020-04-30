@@ -7,6 +7,10 @@ body {
   background-color: $bg;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2,
@@ -37,12 +41,11 @@ p {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 3% 6%;
+  width: 100%;
 
   @media screen and ( min-width:768px ) {
+    display: flex;
     flex-direction: row;
     margin: 3%;
   }
@@ -56,12 +59,10 @@ p {
   overflow: hidden;
   padding-top: 13%;
   padding-bottom: 12%;
-  width: 100%;
   flex: 1;
 
   @media screen and ( min-width:768px ) {
     justify-content: flex-start;
-    width: auto;
     padding: 10% 3%;
   }
 
