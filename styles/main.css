@@ -44,7 +44,6 @@ p.author {
 }
 
 .wrapper {
-  margin: 3% 6%;
   width: 100%;
 }
 
@@ -57,7 +56,6 @@ p.author {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 3%;
   }
 }
 
@@ -86,7 +84,7 @@ p.author {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 10% 3%;
+    padding: 3%;
   }
 }
 
