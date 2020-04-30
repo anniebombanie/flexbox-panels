@@ -52,15 +52,16 @@ p {
 .panel {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: auto;
   overflow: hidden;
   padding-top: 13%;
   padding-bottom: 12%;
   flex: 1;
+  transition: all 0.3s ease-in-out;
 
   @media screen and ( min-width:768px ) {
-    justify-content: flex-start;
     padding: 3%;
   }
 
@@ -73,6 +74,26 @@ p {
       border-bottom: none;
       border-left: 1px solid #fff;
       border-right: 1px solid #fff;
+    }
+  }
+
+  > *:first-child {
+    transform: translateY( -50vh );
+  }
+
+  > *:last-child {
+    transform: translateY( 50vh );
+  }
+
+  &.active {
+    flex: 3;
+
+    > *:first-child {
+      transform: translateY( 0 );
+    }
+
+    > *:last-child {
+      transform: translateY( 0 );
     }
   }
 }
