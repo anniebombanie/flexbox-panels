@@ -44,9 +44,6 @@ p.author {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 3% 6%;
 }
 
@@ -114,11 +111,18 @@ p.author {
 @media screen and (min-width: 768px) {
   .img-container {
     height: auto;
-    width: calc( 100vmax / 3);
+    width: calc( 100% / 3);
   }
 }
 
 .img-container img {
   width: auto;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .img-container img {
+    height: 100%;
+    width: auto;
+  }
 }

@@ -40,7 +40,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 3% 6%;
 
   @media screen and ( min-width:768px ) {
@@ -86,11 +85,16 @@ p {
 
   @media screen and ( min-width:768px ) {
     height: auto;
-    width: calc( 100vmax / 3 );
+    width: calc( 100% / 3 );
   }
 
   img {
     width: auto;
     height: 100%;
+
+    @media screen and ( min-width:768px ) {
+      height: 100%;
+      width: auto;
+    }
   }
 }
