@@ -40,13 +40,10 @@ p {
   }
 }
 
-.wrapper {
+.panels {
   width: 100%;
-
-  @media screen and ( min-width:768px ) {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
 .panel {
@@ -56,38 +53,24 @@ p {
   align-items: center;
   width: auto;
   overflow: hidden;
-  padding-top: 13%;
-  padding-bottom: 12%;
+  padding: 3%;
   flex: 1;
-  transition: all 0.3s ease-in-out;
-
-  @media screen and ( min-width:768px ) {
-    padding: 3%;
-  }
+  transition: flex 0.3s ease-in-out, transform 0.3s ease-in-out;
 
   &:nth-child( 2 ) {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-
-    @media screen and ( min-width:768px ) {
-      border-top: none;
-      border-bottom: none;
-      border-left: 1px solid #fff;
-      border-right: 1px solid #fff;
-    }
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
   }
 
   > *:first-child {
-    transform: translateY( -50vh );
+    transform: translateY( -200% );
   }
 
   > *:last-child {
-    transform: translateY( 50vh );
+    transform: translateY( 200% );
   }
 
-  &.active {
-    flex: 3;
-
+  &.open-active {
     > *:first-child {
       transform: translateY( 0 );
     }
@@ -96,27 +79,21 @@ p {
       transform: translateY( 0 );
     }
   }
+
+  &.open {
+    flex: 3;
+  }
 }
 
 .img-container {
-  max-width: 100%;
   width: auto;
-  height: calc( 100vmax / 3 );
   max-height: 100%;
   margin: 8% 0 9%;
-
-  @media screen and ( min-width:768px ) {
-    height: auto;
-    max-width: 300px;
-  }
+  height: auto;
+  max-width: 300px;
 
   img {
-    width: auto;
-    height: 100%;
-
-    @media screen and ( min-width:768px ) {
-      height: auto;
-      width: 100%;
-    }
+    height: auto;
+    width: 100%;
   }
 }
