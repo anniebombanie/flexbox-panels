@@ -34,7 +34,7 @@ p {
   font-weight: 300;
   line-height: 1.25;
   margin: 0;
-  max-width: 285px;
+  max-width: 385px;
 }
 
 p span {
@@ -66,11 +66,10 @@ p span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: calc(( 100% / 3 ) - 6%);
-  padding: 3%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 3%;
   -webkit-transition: -webkit-box-flex 0.3s ease-in-out;
   transition: -webkit-box-flex 0.3s ease-in-out;
   transition: flex 0.3s ease-in-out;
@@ -84,6 +83,16 @@ p span {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.panel > *:first-child {
+  -webkit-transform: translateY(-50vh);
+          transform: translateY(-50vh);
+}
+
+.panel > *:last-child {
+  -webkit-transform: translateY(50vh);
+          transform: translateY(50vh);
 }
 
 .panel:nth-child(2) {
@@ -111,5 +120,5 @@ img {
   width: 100%;
   height: auto;
   max-width: 400px;
-  margin: 8% 0 9%;
+  margin: 18px 0 22px;
 }
