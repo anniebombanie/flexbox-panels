@@ -34,7 +34,7 @@ p {
   font-weight: 300;
   line-height: 1.25;
   margin: 0;
-  max-width: 385px;
+  max-width: 300px;
 }
 
 p span {
@@ -50,6 +50,9 @@ p span {
   display: flex;
   min-height: 100vh;
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .panel {
@@ -119,6 +122,6 @@ p span {
 img {
   width: 100%;
   height: auto;
-  max-width: 400px;
-  margin: 18px 0 22px;
+  max-width: 350px;
+  margin: 20px 0 26px;
 }
